@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+}
+
+:root {
+    --white:hsl(0, 0%, 100%);
+    --stone-100:hsl(30, 54%, 90%);
+    --stone-150:hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900:hsl(24, 5%, 18%);
+    --brown-800:hsl(14, 45%, 36%);
+    --rose-800:hsl(332, 51%, 32%);
+    --rose-50:hsl(330, 100%, 98%);
+    --paragraph-fs:16px;
+}
+
+body {
+width: 100vw;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--stone-100);
+font-family: "Outfit", serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+}
+
+.container{
+    width: 40rem;
+    height: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+
+}
+.header-img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.header-text{
+    color: var(--stone-900);
+    margin: 2rem 0;
+}
+.paragraph{
+    color:var(--stone-600);
+ 
+  font-size: 12px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.Preparation {
+    padding: 1.5rem;
+    background-color: var(--rose-50);
+    margin:2rem 0;
+    border-radius: 10px;
+
+}
+
+.Preparation > ul {
+    padding-left: 2rem;
+    color: var(--rose-800);
+}
+.Preparation > ul >li , .ingredients >ul >li, .instructions>ol>li{
+    /* padding-top: 0.5rem;
+    padding-bottom: 0.5rem;     */
+    padding: 1rem;
+    font-family: "Outfit", serif;
+}
+.ingredients > ul , .instructions >ol{
+    padding: 1rem 2rem;
+    color: var(--brown-800);
+}
+.pink-text{
+    color: var(--rose-800);
+}
+.strong-text{
+    color: var(--stone-600);
+    font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+}
+.title {
+    color: var(--brown-800);
+    font-family: "Outfit", serif;
+    font-weight: 500;
+}
+.instructions, .nutrition {
+    padding: 1.5rem 0 1.5rem 0;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  table>td:nth-child(even){
+    color:var(--brown-800);
+    font-family: "Outfit", serif;
+  }
+   td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
